@@ -16,35 +16,38 @@
             height: 680px;
             position: relative;
             margin: 6% auto;
-            background: white;
+            background: rgba(254, 251, 246, 1);
             padding: 5px;
             overflow: hidden;
             border-radius: 20px;
         }
 
         .button-box {
-            width: 230px;
-            margin: 35px auto;
-            position: relative;
-            box-shadow: 0 0 20px 9px #ff61241f;
-            border-radius: 30px;
-        }
+          width: 230px;
+          margin: 35px auto;
+          position: relative;
+          box-shadow: 0 0 20px 9px #ff61241f;
+          border-radius: 30px;
+          text-align: center;
+          display: flex; /* Add this line */
+          justify-content: center; /* Add this line */
+        } 
 
-        /* .toggle-btn {
+        .toggle-btn {
             padding: 10px 30px;
             cursor: pointer;
             background: transparent;
             outline: none;
             position: relative;
             border: 0;
-        } */
+        }
         #btn {
             top: 0;
             left: 0;
             position: absolute;
             width: 110px;
             height: 100%;
-            background: linear-gradient(to right, #ff105f, #ffad06);
+            background: rgba(97, 130, 100, 1);
             border-radius: 30px;
             transition: .5s;
             color: black;
@@ -54,8 +57,9 @@
             position: absolute;
             width: 280px;
             transition: .5s;
-            left: 50px; /* Adjusted left property */
+            left: 50px ; /* Adjusted left property */
             margin-bottom: 10px;
+            margin-left: 20px;
 
         }
         .input-field,
@@ -66,6 +70,7 @@
       width: 100%;
       padding: 10px 0;
       margin: 5px 0;
+      margin-left: 5px !important;
       border-left: 0;
       border-top: 0;
       border-right: 0;
@@ -74,20 +79,37 @@
       background: transparent;
     }
 
-     .submit-btn {
+     /* .submit-btn {
         width: 100%; 
         padding: 10px 30px ;
         cursor: pointer;
         display: block;
-        margin: auto; /* Tambahkan baris ini */
+        margin: auto; 
         background-color: #ff0000;
         border: 0;
         outline: none;
         border-radius: 30px;
         margin-top: 80px;
         color: white;
-        /* padding-left: 300px; */
-    } 
+        
+      }  */
+
+      .submit-btn {
+        width: 100%;
+        padding: 10px 0px;
+        cursor: pointer;
+        display: block;
+        /* margin: auto;  */
+        background-color: rgba(97, 130, 100, 1);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+        margin-top: 80px;
+        color: rgba(254, 251, 246, 1);
+        margin-left: 5px important;
+        padding-left: 5px;
+        }
+      
 
     .check-box{
       margin: 0 0 0 0;
@@ -103,11 +125,11 @@
       left: 50px;
     }
     #register{
-      left: 450px;
+      left: 4250px;
     }
 
     .validation-message {
-    color: red;
+    color: rgba(97, 130, 100, 1);
     }
     @media (max-width: 600px){
     .LOGREG-LINKS
@@ -171,12 +193,12 @@
             <button type="button" class="toggle-btn" onclick="login()">Login</button>
             <button type="button" class="toggle-btn" onclick="register()">Register</button>
         </div>
-  <form id="login"class="input-group">
-  <input type="email"class="input-field"placeholder="E-Mail"required>
-  <input type="password"class="input-field"placeholder="Enter Password"required>
-  <input type="checkbox"class="check-box"><span>Remember Password</span> <br><br><br>
-  <button type="submit" class="submit-btn">Login</button>
-</form> 
+        <form id="login" class="input-group">
+            <input type="email" class="input-field" id="email" placeholder="E-Mail" required>
+            <input type="password" class="input-field" id="password" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span>Remember Password</span> <br><br><br>
+            <button type="button" class="submit-btn" onclick="checkLogin()">Login</button>
+        </form> 
 <form id="register" class="input-group">
   <!-- <button type="submit" class="submit-btn">register</button> -->
   <input type="text"class="input-field"placeholder="Nama"required>
@@ -196,6 +218,12 @@
     <option>Jakarta</option>
     <option>Tangerang</option>
     <option>Bekasi</option>
+    <option>Bandung</option>
+    <option>Surabaya</option>
+    <option>Yogyakarta</option>
+    <option>Medan</option>
+    <option>Denpasar</option>
+    <option>Makassar</option>
     <option>Other</option>
   </select>
  </div>
@@ -208,7 +236,7 @@
   
   <span id="message"></span>
   <!-- <input type="password"class="input-field"placeholder="Enter Password"required> -->
-  <button type="submit" class="submit-btn"onclick="checkPassword()">Register</button>
+  <button type="button" class="submit-btn" onclick="checkPassword()">Register</button>
 </form> 
     </div>
 </div>
@@ -221,7 +249,7 @@
   function register(){
     x.style.left = "-400px";
     y.style.left = "50px";
-    z.style.left = "110px";
+    z.style.left = "120px";
 
   }
   function login(){
@@ -229,6 +257,23 @@
     y.style.left = "450px";
     z.style.left = "0";
 
+  }
+
+  function checkPassword() {
+    var username = document.getElementById("email").value; // Add an ID to your username input
+    var password = document.getElementById("password").value;
+
+    // Dummy login credentials (replace with your actual credentials)
+    var validUsername = "riftisa@gmail.com";
+    var validPassword = "rifti123";
+
+    if (username === validUsername && password === validPassword) {
+      // Login successful, redirect to index.html
+      window.location.href = "index.html"; // Replace "index.html" with the actual path of your index page
+    } else {
+      // Invalid credentials, handle accordingly (e.g., show an error message)
+      alert("Invalid username or password. Please try again.");
+    }
   }
 
 
@@ -270,19 +315,23 @@ if(myInput.value.length >= 8) {
   length.classList.add("invalid");
 }
 
-function checkPassword() {  
-var pw1 = document.getElementById("password");  
-var pw2 = document.getElementById("confirm_password");  
-if(pw1 != pw2)  
-{   
-  alert("Passwords did not match");  
-} 
-else {  
-  alert("Password created successfully");  
-}  
+function checkLogin() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
 
-}  
-  </script>
+
+    var validEmail = "riftisa@gmail.com";
+    var validPassword = "rifti123";
+
+    if (email === validEmail && password === validPassword) {
+
+        window.location.href = "index.html"; 
+    } else {
+        
+        alert("Invalid email or password. Please try again.");
+    }
+}
+</script>
 
 </body>
 </html>

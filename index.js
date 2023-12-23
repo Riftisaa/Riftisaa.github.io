@@ -1,6 +1,6 @@
 const multipleItemCarousel = document.querySelector('#carouselExampleControls');
 
-if(window.matchMedia("(min-width:576px").matches){
+if(window.matchMedia("(min-width:1240px").matches){
     
 
     var carouselWidth = $('#innerPopular')[0].scrollWidth;
@@ -27,7 +27,36 @@ if(window.matchMedia("(min-width:576px").matches){
     }
 
     });
-}else{
+}
+else if(window.matchMedia("(max-width:1240px").matches){
+    
+
+    var carouselWidth = $('#innerPopular')[0].scrollWidth;
+    var cardWidth = $('.popularItem').width();
+    var scrollPosition = 0;
+
+    $('#popularNext').on('click', function () {
+        if(scrollPosition < (carouselWidth - (cardWidth * 2 ))){
+
+        
+            console.log('next');
+            scrollPosition = scrollPosition + cardWidth;
+            $('#innerPopular').animate({scrollLeft: scrollPosition},800)
+        }
+    });
+
+    $("#popularPrev").on("click", function () {
+    if (scrollPosition > 0) {
+        console.log('prev')
+        scrollPosition -= cardWidth;
+        $("#innerPopular").animate(
+        { scrollLeft: scrollPosition },
+        600);
+    }
+
+    });
+}
+else{
     $(multipleItemCarousel).addClass('slide');
 }
 
