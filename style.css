@@ -612,34 +612,6 @@ img{
 
 
 
-/* .prevButton-icon,
-.nextButton-icon{
-  width: 2.8125rem;
-  height: 2.5625rem;
-  background-color: var(--CTA, #618264) !important;
-}
-
-
-
-.prevButton{
-  left: 87% !important;
-  right: calc(5rem + 2.8125rem + 2rem) !important;
-  left: none !important;
-  top: -2.5rem !important;
-  width: 2.8125rem !important;
-  height: 2.5625rem !important;
-
-}
-
-.nextButton{
-  right: 5% !important;
-  top: -2.5rem !important;
-  width: 2.8125rem !important;
-  height: 2.5625rem !important;
-
-} */
-
-
 
 /* recent news */
 
