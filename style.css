@@ -202,7 +202,7 @@ h2{
   box-shadow: 1px 8px 60px 8px rgba(0, 0, 0, 0.09);
 }
 
-@media screen and (min-width:1023px){
+@media screen and (min-width:801px){
   .btnRegion{
 
     width: 10rem;
@@ -227,22 +227,26 @@ h2{
   }
 
   .lastChild{
-    display: flex;
-    justify-content: end;
-    align-items: end;
+    display: flex !important;
+    justify-content: center  !important;
+    align-items: center !important;
   }
   
 
 }
 
-.btnRegion{
+@media screen and (max-width:800px){
+  .btnRegion{
 
-  display: none ;
+    display: none ;
+  }
+  
+  .btnRegion2{
+    display: none;
+  }
 }
 
-.btnRegion2{
-  display: none;
-}
+
 
 
 
@@ -459,6 +463,7 @@ img{
   }
 
   .col-6{
+    
     width: 100% !important;
   }
 
@@ -471,6 +476,18 @@ img{
 
   
 }
+#judulBawah{
+  /* padding-top: 2rem; */
+  justify-content: start !important;
+  margin-left: 2rem !important;
+}
+
+#gambarBawah{
+  justify-content: start;
+  /* margin-left: 2rem  !important; */
+
+
+}
 
 .gunung{
   height: 40rem;
@@ -478,12 +495,14 @@ img{
 
 .gambarGunung{
   height: 100%; 
-  max-width: 100%;
+  max-width: 668px;
   flex-shrink: 0; 
   border-radius: 0 !important;
 }
 
 .col-6{
+  display: flex;
+  justify-content: end;
   padding: 0 !important;
   max-width: 100% !important;
   width: 100%;
@@ -632,8 +651,11 @@ img{
 }
 
 
+
+
 .bigCard{
-  width: 83.5%;
+  width:  37.875rem;
+
   height: 25.25rem !important; background: var(--Primary, #FEFBF6) !important;
   box-shadow: 1px 8px 60px 8px rgba(0, 0, 0, 0.09);
   border-radius: 0 !important;
@@ -664,10 +686,11 @@ img{
 
 
 .smallCard{
-  width: 83.5%;
+  width:  37.875rem;
+  max-width: 60re;
   height: 11.4375rem !important; background: var(--Primary, #FEFBF6) !important;
   box-shadow: 1px 8px 60px 8px rgba(0, 0, 0, 0.09);
-  display: flex;
+  display: flex !important;
   flex-direction: row !important;
 
 
