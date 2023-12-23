@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambora </title>
+    <link rel="icon" href="/assets/image/Tambora_logo.svg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="styleguide.css">
+    <script></script>
+
+</head>
+<body>
+
+  <!-- navbar start -->
+  
+  <img class="hero-image" src="/assets/image/hero image.svg" >
+  <div id="gradient"> </div>
+  <nav class="navbar fixed-top navbar-expand-lg  ">
+    <div class="container-fluid" id="navbarContent">
+      <img class="tambora-transparent" src="/assets/image/Tambora_Transparent_black 3.svg" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="kanan" href="#">Tour Package</a>
+          </li>
+        </ul>
+      </div>
+      <img class="group" src="/assets/image/Mask group.svg" />
+      
+    </div>
+  </nav>
+
+  <!-- navbar end -->
+
+
+ <!-- get started & search box -->
+
+  <div class="container-fluid" id="getStarted" >
+    <div class="getStarted">
+      <h1>FIND BEST ROUTE TROUGH MOUNTAIN</h1>
+      <h2>start to getting bored with your activities? it’s time to start yout advantures and back to nature</h2>
+    
+    </div>
+
+    <div class="searchBox">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="dropdown">
+            <button class="btnRegion btn-light dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Region
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 " >
+          <div class="dropdown">
+            <button class="btnRegion2 btn-light dropdown-toggle border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Region
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        
+        <div class="col-md-4 justify-content-end lastChild">
+          <button type="button" class="btn btn-primary border-0" id="btnStarted">Get Started</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- end of get started & search box -->
+
+  <!-- Popular MOUNTAIN -->
+  
+  <div class="container-fluid" id="popularMountain">
+    <h3>POPULAR MOUNTAIN</h3>
+
+        <!-- carousel -->
+
+
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner" id="innerPopular">
+        <div class="carousel-item active popularItem">
+          <div class="card border-0 ">
+            <div class="img-wrapper">
+              <img src="assets/image/Rinjani.svg"  alt="...">
+            </div>
+            <div class="card-body border-0">
+                <h5 class="card-title">Rinjani</h5>
+                <h6 class="card-text">16h - 25Km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item popularItem">
+          <div class="card border-0">
+            <div class="img-wrapper">
+              <img src="assets/image/merbabu.svg" alt="...">
+            </div>
+              <div class="card-body">
+                <h5 class="card-title">merbabu</h5>
+                <h6 class="card-text">10h - 32Km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item popularItem">
+          <div class="card border-0">
+            <div class="img-wrapper">
+              <img src="assets/image/semeru.svg" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">semeru</h5>
+                <h6 class="card-text">10h - 32 km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item popularItem">
+          <div class="card border-0">
+            <div class="img-wrapper">
+              <img src="assets/image/kerinci.svg" alt="...">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">kerinci</h5>
+                <h6 class="card-text">12h - 28Km</h6>
+            </div>
+        </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" id="popularPrev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" id="popularNext" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+    <!-- end of popular mountain -->
+
+    <!-- help you -->
+
+  <div class="container-fluid" id="helpYou">
+    <div class="row" id="gambarGunung" >
+      <div class="col-6">
+        <img class="gambarGunung" src="/assets/image/22860458_239448449919557_1085502595507683328_n.jpg" alt="">
+      </div>
+      <div class="col-6">
+        <div class="judul" id="judulAtas">
+          <h3 class="judul-helpyou">Tambora Help you <br /> Find Hiking Equipment</h3>
+            <p class="judul-helpyou">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button type="button" class="btn btn-primary border-0" id="readMore">Get Started</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="judul" id="judulBawah" >
+          <h3 class="judul-helpyou" id="title">Find The Best Route <br /> Trough Mountain</h3>
+            <p class="judul-helpyou">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button type="button" class="btn btn-primary border-0" id="readMore">Get Started</button>
+
+        </div>
+      </div>
+      <div class="col-6" id="gambarBawah">
+        <img class="gambarGunung" src="/assets/image/coba.svg " alt="">
+      </div>
+
+      
+    </div>
+  </div>
+
+  <!-- end of help you -->
+
+
+  <!-- user review -->
+
+
+  <div class="container-fluid userReviewContainer">
+    <div class="row">
+      <div class="col-6 align-content-lg-start">
+        <h3 class="userReviewText">User Review</h3>
+      </div>
+      <div class="col-6"></div>
+
+    </div>
+    <div id="carouselExampleControlsUser" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner" id="userCarousel">
+        <div class="carousel-item userReview active">
+          <div class="card border-0 userCard">
+            <div class="img-wrapper">
+              <img class="gambarUser" src="assets/image/mobius icons.jpeg"  alt="...">
+            </div>
+            <div class="card-body border-0">
+                <h5 class="card-title">Owen Wilson</h5>
+                <h6 class="card-text">16h - 25Km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item active userReview ">
+          <div class="card border-0 userCard ">
+            <div class="img-wrapper">
+              <img class="gambarUser" src="assets/image/lokisvg.svg" alt="...">
+            </div>
+              <div class="card-body border-0">
+                <h5 class="card-title">Tom Hiddleston</h5>
+                <h6 class="card-text">10h - 32Km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item userReview">
+          <div class="card border-0 userCard ">
+            <div class="img-wrapper">
+              <img class="gambarUser" src="/assets/image/sylviesvg.svg" alt="...">
+            </div>
+            <div class="card-body border-0">
+                <h5 class="card-title">Sophia Di Martino</h5>
+                <h6 class="card-text">10h - 32 km</h6>
+            </div>
+        </div>
+        </div>
+        <div class="carousel-item userReview">
+          <div class="card border-0 userCard ">
+            <div class="img-wrapper">
+              <img class="gambarUser" src="/assets/image/OBsvg.svg" alt="...">
+            </div>
+            <div class="card-body border-0">
+                <h5 class="card-title">Ke Huy Quan</h5>
+                <h6 class="card-text">10h - 32 km</h6>
+            </div>
+        </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev prevButton" id="userPrev" type="button" data-bs-target="#carouselExampleControlsUser" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon prevButton-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next nextButton" id="userNext" type="button" data-bs-target="#carouselExampleControlsUser" data-bs-slide="next">
+        <span class="carousel-control-next-icon nextButton-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  
+      
+    </div>
+  </div>
+
+
+  <!-- recent news -->
+
+  <div class="container-fluid align recentNews">
+    <div class="row">
+      <h3 class="recentNewsText">Recent News</h3>
+      <div class="col bigCol">
+        <div class="card bigCard" id="bigCard">
+          <div class="newsDeskription1">
+            <p class="informationHead">
+              Information
+            </p>
+            <p class="informationBody">
+              Mount Semeru Will 
+              Open Soon
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <div class="card smallCard" id="small1">
+       
+              <img class="gambarNews" src="assets/image/smallcard1.png" alt="...">
+              
+              <div class="newsDeskription1">
+                <p class="informationHead">
+                  Information
+                </p>
+                <p class="informationBody">
+                  Mount Semeru Will 
+                  Open Soon
+                </p>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col">
+            <div class="card smallCard" id="small2">
+              <img class="gambarNews" src="assets/image/smallcard2.png" alt="...">
+              <div class="newsDeskription1">
+                <p class="informationHead">
+                  Information
+                </p>
+                <p class="informationBody">
+                  Mount Semeru Will 
+                  Open Soon
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ 
+
+  <!-- download now -->
+
+  <div class="container-fluid appsContainer">
+    <div class="col mobileApps">
+      <h3 class="mobileTitle">Download Mobile Apps</h3>
+      <h5 class="mobileText">get 20% off voucher</h5>
+      <button type="button" class="btn btn-primary border-0" id="mobileButton">download</button>
+
+    </div>
+  </div>
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="container containerFooter">
+      <div class="row rowFooter">
+        <div class="footer-col">
+          <h5 class="footerTitle">TAMBORA</h5>
+          <ul>
+            <li><a href="#">start to getting bored with your activities? it’s time to start yout advantures and back to nature</a></li>
+            
+          </ul>
+          <div class="social-links">
+            <img src="/assets/image/instagram.svg" class="gambarSocial">
+            <img src="/assets/image/tweeter.svg" class="gambarSocial">
+            <img src="/assets/image/whatsapps.svg" class="gambarSocial">
+
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5 class="footerTitle">News</h5>
+          <ul>
+            <li><a href="#">Hiking</a></li>
+            <li><a href="#">Transportasion</a></li>
+            <li><a href="#">Mountain</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footerTitle">Our Product</h5>
+          <ul>
+            <li><a href="#">Tracking Jurnal</a></li>
+            <li><a href="#">Rent Hiking Equipment</a></li>
+            <li><a href="#">porter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 class="footerTitle">Contact</h5>
+          <ul>
+            <li><a href="#">(081) 34532442342</a></li>
+            <li><a href="#">hellotambora@gmail.com</a></li>
+          </ul>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="credit">
+      <div class="textWrapper">
+        <img class="gambarCredit" src="/assets/image/credit1svg.svg" alt="">
+        <h2 class="tamboraCredit">2023 hellotambora</h2>
+      </div>
+      
+    </div>
+ </footer>
+  
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- <section class="containerCarousel">
+      <div class="cardCarousel">
+        <div class="card-imageCarousel car-1 "></div>
+        <h3>Title</h3>
+        <p>Text</p>
+      </div>
+      <div class="cardCarousel">
+        <div class="card-imageCarousel"></div>
+        <h3>Title</h3>
+        <p>Text</p>
+      </div>
+      <div class="cardCarousel">
+        <div class="card-imageCarousel"></div>
+        <h3>Title</h3>
+        <p>Text</p>
+      </div> -->
+
+
+  <!-- </section> -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
+  
+
+    
+</body>
+</html>
