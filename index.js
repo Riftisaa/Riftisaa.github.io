@@ -1,6 +1,6 @@
 const multipleItemCarousel = document.querySelector('#carouselExampleControls');
 
-if(window.matchMedia("(min-width:1240px").matches){
+if(window.matchMedia("min-width:1240px").matches){
     
 
     var carouselWidth = $('#innerPopular')[0].scrollWidth;
@@ -28,7 +28,7 @@ if(window.matchMedia("(min-width:1240px").matches){
 
     });
 }
-else if(window.matchMedia("(max-width:1240px").matches){
+else if(window.matchMedia("max-width:1239px").matches){
     
 
     var carouselWidth = $('#innerPopular')[0].scrollWidth;
@@ -57,7 +57,30 @@ else if(window.matchMedia("(max-width:1240px").matches){
     });
 }
 else{
-    $(multipleItemCarousel).addClass('slide');
+    var carouselWidth = $('#innerPopular')[0].scrollWidth;
+    var cardWidth = $('.popularItem').width();
+    var scrollPosition = 0;
+
+    $('#popularNext').on('click', function () {
+        if(scrollPosition < (carouselWidth - cardWidth )){
+
+        
+            console.log('next1');
+            scrollPosition = scrollPosition + cardWidth;
+            $('#innerPopular').animate({scrollLeft: scrollPosition},800)
+        }
+    });
+
+    $("#popularPrev").on("click", function () {
+    if (scrollPosition > 0) {
+        console.log('prev')
+        scrollPosition -= cardWidth;
+        $("#innerPopular").animate(
+        { scrollLeft: scrollPosition },
+        600);
+    }
+
+    });
 }
 
 
@@ -79,7 +102,7 @@ else{
 
 const multipleItemCarouselUser = document.querySelector('#carouselExampleControlsUser');
 
-if(window.matchMedia("(min-width:576px").matches){
+if(window.matchMedia("(min-width:1023px").matches){
     
 
     var carouselWidthUser = $('#userCarousel')[0].scrollWidth;
@@ -109,3 +132,17 @@ if(window.matchMedia("(min-width:576px").matches){
 }else{
     $(multipleItemCarouselUser).addClass('slide');
 }
+
+
+
+// $(".dropdown-menu").ready(function() {
+
+//     if ((screen.width<1023)) {
+//         // if screen size is 1025px wide or larger
+//         $(".yourClass").css('display', 'none'); // you can also use $(".yourClass").hide();
+//     }
+//     elseif ((screen.width<=1024))  {
+//         // if screen size width is less than 1024px
+//         $(".yourClass").css('display', 'block'); // here you can also use show();
+//     }
+//     });
